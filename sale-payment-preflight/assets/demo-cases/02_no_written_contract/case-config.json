@@ -1,0 +1,12 @@
+{
+  "case_name": "丙午零部件诉丁未机械买卖合同货款纠纷（无书面合同演示）",
+  "client_name": "浙江丙午零部件（演示）有限公司",
+  "counterparty_name": "宁波丁未机械（演示）有限公司",
+  "client_side": "seller",
+  "as_of_date": "2026-08-12",
+  "currency": "CNY",
+  "authorized": true,
+  "questions": [
+    "无书面合同时现有材料能否形成合同关系线索？"
+  ]
+}

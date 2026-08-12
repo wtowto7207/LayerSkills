@@ -1,0 +1,4 @@
+interface:
+  display_name: "买卖合同货款追索案卷体检"
+  short_description: "离线整理买卖合同案卷并生成可追溯、待律师复核的诉前成果"
+  default_prompt: "使用 $sale-payment-preflight 对本地买卖合同货款追索案卷做离线诉前体检，保留来源定位并输出律师复核前草稿。"

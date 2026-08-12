@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-11T17:39:51.611997+00:00",
+  "status": "passed",
+  "claim_scope": "开放 Agent Skills 包结构与确定性核心脚本在两种发现目录布局中的兼容性校验",
+  "live_agent_run": false,
+  "live_agent_note": "本报告不等同于第二个智能体产品的模型触发、界面或人工复跑证据。",
+  "source_contract": {
+    "status": "passed",
+    "errors": [],
+    "name": "sale-payment-preflight",
+    "description_length": 609,
+    "skill_md_lines": 59,
+    "frontmatter_fields": [
+      "description",
+      "name"
+    ],
+    "required_directories": {
+      "scripts": true,
+      "references": true,
+      "assets": true
+    }
+  },
+  "layout_runs": {
+    "codex_personal_skill_layout": {
+      "relative_entrypoint": "codex-home/skills/sale-payment-preflight/SKILL.md",
+      "contract": {
+        "status": "passed",
+        "errors": [],
+        "name": "sale-payment-preflight",
+        "description_length": 609,
+        "skill_md_lines": 59,
+        "frontmatter_fields": [
+          "description",
+          "name"
+        ],
+        "required_directories": {
+          "scripts": true,
+          "references": true,
+          "assets": true
+        }
+      },
+      "core_run": {
+        "status": "passed",
+        "returncode": 0,
+        "invariants": {
+          "materials": 6,
+          "facts": 44,
+          "issues": 1,
+          "outstanding_principal": "100000.00",
+          "unsupported_or_blocked_files": 0,
+          "originals_unchanged": true,
+          "source_traceability_complete": true,
+          "fabricated_fact_count": 0,
+          "network_access_used": false
+        },
+        "analysis_sha256": "69cb94bd3903b80d782c646a6044231d0a723f4824695756822bc5771e8a80e2"
+      }
+    },
+    "claude_code_project_skill_layout": {
+      "relative_entrypoint": "claude-project/.claude/skills/sale-payment-preflight/SKILL.md",
+      "contract": {
+        "status": "passed",
+        "errors": [],
+        "name": "sale-payment-preflight",
+        "description_length": 609,
+        "skill_md_lines": 59,
+        "frontmatter_fields": [
+          "description",
+          "name"
+        ],
+        "required_directories": {
+          "scripts": true,
+          "references": true,
+          "assets": true
+        }
+      },
+      "core_run": {
+        "status": "passed",
+        "returncode": 0,
+        "invariants": {
+          "materials": 6,
+          "facts": 44,
+          "issues": 1,
+          "outstanding_principal": "100000.00",
+          "unsupported_or_blocked_files": 0,
+          "originals_unchanged": true,
+          "source_traceability_complete": true,
+          "fabricated_fact_count": 0,
+          "network_access_used": false
+        },
+        "analysis_sha256": "4fe0beda415b19a79735143d07d38b4a7178a70122149b6b41442720d7ad020b"
+      }
+    }
+  },
+  "invariant_parity": true,
+  "references": [
+    "https://code.claude.com/docs/en/skills",
+    "https://platform.claude.com/docs/es/agents-and-tools/agent-skills/best-practices"
+  ]
+}

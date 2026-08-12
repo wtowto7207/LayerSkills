@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "review_status": "pending_prc_lawyer_approval",
+  "rules": [
+    {
+      "id": "R01",
+      "category": "主体与授权",
+      "question": "委托方、相对方主体名称及代理权限是否有材料线索？",
+      "required_any": ["party"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L04"],
+      "lawyer_note": "核验工商登记、签约主体、收付款主体与授权链；脚本只提示名称线索。"
+    },
+    {
+      "id": "R02",
+      "category": "合同关系",
+      "question": "是否发现书面合同或可共同指向买卖关系的订单、交付、结算等材料？",
+      "required_any": ["contract", "order", "delivery", "reconciliation"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L01", "L02"],
+      "lawyer_note": "无书面合同时必须综合交易方式、交易习惯及其他证据，不得仅凭发票下结论。"
+    },
+    {
+      "id": "R03",
+      "category": "标的与价款",
+      "question": "标的、数量、单价或总价是否可由材料定位？",
+      "required_any": ["contract", "order", "delivery"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L01"],
+      "lawyer_note": "检查订单、合同附件、报价、送货单之间的品名数量与价格一致性。"
+    },
+    {
+      "id": "R04",
+      "category": "交付",
+      "question": "是否存在交付、收货或物流材料线索？",
+      "required_any": ["delivery"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L02", "L03"],
+      "lawyer_note": "核验签收人身份、签收时间、数量、原件及与买方的关联。"
+    },
+    {
+      "id": "R05",
+      "category": "验收与异议",
+      "question": "是否存在验收、质量异议、退换货或维修材料线索？",
+      "required_any": ["acceptance", "quality"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L01", "L02"],
+      "lawyer_note": "未发现不等于不存在；向委托人核实检验、异议和退货事实。"
+    },
+    {
+      "id": "R06",
+      "category": "开票",
+      "question": "开票主体、金额与对应交易是否有材料线索？",
+      "required_any": ["invoice"],
+      "severity_if_missing": "low",
+      "legal_sources": ["L02"],
+      "lawyer_note": "发票不能当然替代合同、交付或欠款确认。"
+    },
+    {
+      "id": "R07",
+      "category": "对账与债权确认",
+      "question": "是否存在对账单、还款承诺或债权确认材料线索？",
+      "required_any": ["reconciliation"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L02", "L03"],
+      "lawyer_note": "核验签章、签署人权限、确认范围及是否变更原付款约定。"
+    },
+    {
+      "id": "R08",
+      "category": "付款",
+      "question": "付款金额、付款人、收款人及对应交易是否可核对？",
+      "required_any": ["payment"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L01", "L03"],
+      "lawyer_note": "第三方付款、抵销、退货、折让须单独核实，不得仅按流水自动归因。"
+    },
+    {
+      "id": "R09",
+      "category": "欠款计算",
+      "question": "是否存在已确认的单币种货款流水，可精确复算未付本金？",
+      "required_any": ["ledger"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L01"],
+      "lawyer_note": "只计算已确认的应收、付款、退货和折让；利息及违约金不在 v1 范围。"
+    },
+    {
+      "id": "R10",
+      "category": "催告与违约",
+      "question": "是否存在到期、催款、承诺付款或拒付材料线索？",
+      "required_any": ["demand"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L01", "L02"],
+      "lawyer_note": "核验付款期限、到期日、催告送达与对方回应。"
+    },
+    {
+      "id": "R11",
+      "category": "争议解决",
+      "question": "是否发现管辖法院或仲裁条款材料线索？",
+      "required_any": ["jurisdiction"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L01"],
+      "lawyer_note": "仅抽取条款；有效性、实际联系、级别与专属管辖由律师判断。"
+    },
+    {
+      "id": "R12",
+      "category": "时效相关事实",
+      "question": "是否发现履行期限、催告、对账、承诺还款等候选时效事实？",
+      "required_any": ["limitation"],
+      "severity_if_missing": "high",
+      "legal_sources": ["L01"],
+      "lawyer_note": "不得由脚本给出最终起算、中断、中止或届满结论。"
+    },
+    {
+      "id": "R13",
+      "category": "电子数据",
+      "question": "电子邮件、聊天、短信或电子订单是否保留原始载体与形成信息？",
+      "required_any": ["electronic"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L03"],
+      "lawyer_note": "截图仅作线索；核验账号主体、完整上下文、原始设备或可验证导出。"
+    },
+    {
+      "id": "R14",
+      "category": "证据形式",
+      "question": "材料是否完成编号、来源、证明对象和原件状态登记？",
+      "required_any": ["material_index"],
+      "severity_if_missing": "medium",
+      "legal_sources": ["L03"],
+      "lawyer_note": "律师复核材料来源、原件/复制件、签章与提交形式。"
+    }
+  ]
+}
+

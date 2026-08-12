@@ -1,0 +1,13 @@
+{
+  "case_name": "甲辰设备诉乙木制造买卖合同货款纠纷（完整履约演示）",
+  "client_name": "浙江甲辰设备销售（演示）有限公司",
+  "counterparty_name": "杭州乙木制造（演示）有限公司",
+  "client_side": "seller",
+  "as_of_date": "2026-08-12",
+  "currency": "CNY",
+  "authorized": true,
+  "questions": [
+    "履约证据链是否完整？",
+    "尚欠本金能否复算？"
+  ]
+}

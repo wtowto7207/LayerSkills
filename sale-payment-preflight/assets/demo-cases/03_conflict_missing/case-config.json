@@ -1,0 +1,12 @@
+{
+  "case_name": "戊申物资诉己酉工贸买卖合同货款纠纷（矛盾缺证演示）",
+  "client_name": "浙江戊申物资（演示）有限公司",
+  "counterparty_name": "绍兴己酉工贸（演示）有限公司",
+  "client_side": "seller",
+  "as_of_date": "2026-08-12",
+  "currency": "CNY",
+  "authorized": true,
+  "questions": [
+    "金额冲突、第三方付款和签收权限应如何补证？"
+  ]
+}

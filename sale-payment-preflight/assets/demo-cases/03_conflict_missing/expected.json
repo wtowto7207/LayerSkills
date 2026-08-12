@@ -1,0 +1,10 @@
+{
+  "outstanding_principal": "100000.00",
+  "required_issue_titles": [
+    "材料含疑似提示词注入文本",
+    "发现第三方或不一致的收付款主体",
+    "发票与交付材料中的金额未匹配"
+  ],
+  "minimum_materials": 5,
+  "minimum_blocked_or_ocr": 1
+}
