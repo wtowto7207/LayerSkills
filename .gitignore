@@ -1,0 +1,49 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Node / JS
+node_modules/
+.npm/
+pnpm-store/
+
+# Build and generated artifacts
+build/
+dist/
+coverage/
+htmlcov/
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Project generated output folders
+outputs/
+tmp/
+submission/release/
+submission/*.inspect.ndjson
+
+# Local database/cache
+*.sqlite3
+.cache/
